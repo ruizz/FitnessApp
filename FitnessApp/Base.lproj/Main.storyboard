@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4c-1F-bL2" customClass="CounterView" customModule="FitnessApp" customModuleProvider="target">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-2a-8BZ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                        <color key="textColor" red="0.14901960780000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H4c-1F-bL2" secondAttribute="height" multiplier="1:1" id="U4b-Kv-MrI"/>
+                                    <constraint firstItem="eRs-2a-8BZ" firstAttribute="centerY" secondItem="H4c-1F-bL2" secondAttribute="centerY" id="Zd9-4t-k4N"/>
+                                    <constraint firstItem="eRs-2a-8BZ" firstAttribute="centerX" secondItem="H4c-1F-bL2" secondAttribute="centerX" id="gro-1g-pJb"/>
+                                    <constraint firstAttribute="height" constant="240" id="pH9-gk-3Uu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                        <color key="value" red="0.20392156859999999" green="0.59607843140000005" blue="0.85882352939999995" alpha="0.75" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                        <color key="value" red="0.14901960780000001" green="0.50980392159999999" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnr-K3-0jW" customClass="PushButton" customModule="FitnessApp" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="900" constant="100" id="fT2-cs-6b3"/>
+                                    <constraint firstAttribute="width" secondItem="Bnr-K3-0jW" secondAttribute="height" multiplier="1:1" id="p9n-Cf-E8z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.10196078431372549" green="0.73725490196078436" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vrl-3G-mRP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uc-Lk-GxA" customClass="PushButton" customModule="FitnessApp" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="8Wc-Vq-goJ"/>
+                                    <constraint firstAttribute="width" secondItem="0Uc-Lk-GxA" secondAttribute="height" multiplier="23:22" id="Tkr-Cd-AKW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" red="0.78823529410000004" green="0.2470588235" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlY-Bh-eLj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bnr-K3-0jW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H4c-1F-bL2" secondAttribute="bottom" constant="44" id="4ZM-8d-dVe"/>
+                            <constraint firstItem="H4c-1F-bL2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="OnA-YM-Pfa"/>
+                            <constraint firstItem="Bnr-K3-0jW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="THW-k6-3Zu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Uc-Lk-GxA" secondAttribute="bottom" constant="44" id="WAG-Bt-NTE"/>
+                            <constraint firstItem="H4c-1F-bL2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="paf-YM-isu"/>
+                            <constraint firstItem="0Uc-Lk-GxA" firstAttribute="top" secondItem="Bnr-K3-0jW" secondAttribute="bottom" constant="44" id="q2y-6p-D9T"/>
+                            <constraint firstItem="0Uc-Lk-GxA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wY9-6P-7dZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="eRs-2a-8BZ" id="OG9-An-bBt"/>
+                        <outlet property="counterView" destination="H4c-1F-bL2" id="ifW-Fz-D0z"/>
+                        <outlet property="minusButton" destination="0Uc-Lk-GxA" id="RGv-zS-ZI2"/>
+                        <outlet property="plusButton" destination="Bnr-K3-0jW" id="ze6-dn-Kzi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>

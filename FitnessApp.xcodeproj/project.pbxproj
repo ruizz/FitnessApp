@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7416981D96475B00771855 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7416971D96475B00771855 /* GraphView.swift */; };
 		3FCE1B281D9609EC0040F1A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE1B271D9609EC0040F1A7 /* AppDelegate.swift */; };
 		3FCE1B2A1D9609EC0040F1A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCE1B291D9609EC0040F1A7 /* ViewController.swift */; };
 		3FCE1B2D1D9609EC0040F1A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FCE1B2B1D9609EC0040F1A7 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7416971D96475B00771855 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		3FCE1B241D9609EC0040F1A7 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCE1B271D9609EC0040F1A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FCE1B291D9609EC0040F1A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3FCE1B331D9609EC0040F1A7 /* Info.plist */,
 				3FCE1B391D960A820040F1A7 /* PushButton.swift */,
 				3FCE1B3B1D9614F00040F1A7 /* CounterView.swift */,
+				3F7416971D96475B00771855 /* GraphView.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7416981D96475B00771855 /* GraphView.swift in Sources */,
 				3FCE1B2A1D9609EC0040F1A7 /* ViewController.swift in Sources */,
 				3FCE1B281D9609EC0040F1A7 /* AppDelegate.swift in Sources */,
 				3FCE1B3A1D960A820040F1A7 /* PushButton.swift in Sources */,
@@ -305,6 +309,7 @@
 				3FCE1B381D9609EC0040F1A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
